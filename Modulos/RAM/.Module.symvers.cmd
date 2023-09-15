@@ -1,0 +1,1 @@
+cmd_/home/luisa/Escritorio/Sopes1/Proyecto1/so1_proyecto1_2S2023_202003381/Modulos/RAM/Module.symvers := sed 's/\.ko$$/\.o/' /home/luisa/Escritorio/Sopes1/Proyecto1/so1_proyecto1_2S2023_202003381/Modulos/RAM/modules.order | scripts/mod/modpost -m -a  -o /home/luisa/Escritorio/Sopes1/Proyecto1/so1_proyecto1_2S2023_202003381/Modulos/RAM/Module.symvers -e -i Module.symvers   -T -

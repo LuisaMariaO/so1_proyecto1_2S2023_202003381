@@ -1,0 +1,1 @@
+cmd_/home/luisa/Escritorio/Sopes1/Proyecto1/so1_proyecto1_2S2023_202003381/Modulos/RAM/modules.order := {   echo /home/luisa/Escritorio/Sopes1/Proyecto1/so1_proyecto1_2S2023_202003381/Modulos/RAM/ram_202003381.ko; :; } | awk '!x[$$0]++' - > /home/luisa/Escritorio/Sopes1/Proyecto1/so1_proyecto1_2S2023_202003381/Modulos/RAM/modules.order
