@@ -25,15 +25,18 @@ static int escribir_archivo(struct seq_file *archivo, void *v){
     // Obtener información del sistema
     si_meminfo(&si);
     
+    
     total_ram = si.totalram * (si.mem_unit/1024);
     free_ram = si.freeram * (si.mem_unit/1024);
     using_ram = total_ram-free_ram;
     using_percent = 100*using_ram/total_ram;
+    seq_printf(archivo, "{\n\"RAM\":");
     seq_printf(archivo, "{\n\"Total_Ram\":%d,\n", total_ram);
     seq_printf(archivo, "\"Ram_en_Uso\":%d,\n", using_ram);
     seq_printf(archivo, "\"Ram_libre\":%d,\n", free_ram);
     seq_printf(archivo, "\"Porcentaje_en_uso\":%d\n", using_percent);
-    seq_printf(archivo, "\"}\n");
+    seq_printf(archivo, "\"},\n");
+    
     return 0;
 }
 
@@ -53,14 +56,14 @@ static struct proc_ops operaciones =
 static int _insert(void)
 {
     proc_create("ram_202003381", 0, NULL, &operaciones);
-    printk(KERN_INFO "202003381\n");
+    printk(KERN_INFO "Creando modulo RAM\n");
     return 0;
 }
 
 static void _remove(void)
 {
     remove_proc_entry("ram_202003381", NULL);
-    printk(KERN_INFO "Luisa Maria Ortiz Romero\n");
+    printk(KERN_INFO "Removiendo modulo RAM\n");
 }
 
 module_init(_insert);
