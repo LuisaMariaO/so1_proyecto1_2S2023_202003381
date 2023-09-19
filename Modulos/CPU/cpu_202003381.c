@@ -77,7 +77,7 @@ static int escribir_archivo(struct seq_file *file_proc, void *v){
 
     //---------------------------------------------------------------------------
     
-    seq_printf(file_proc, "CPU:{\n\"cpu_total\":%llu,\n", total_cpu_time_ns);
+    seq_printf(file_proc, "\"CPU\":{\n\"cpu_total\":%llu,\n", total_cpu_time_ns);
     seq_printf(file_proc, "\n\"cpu_en_uso\":%llu,\n", total_usage_ns);
     seq_printf(file_proc, "\"cpu_porcentaje\":%ld,\n", cpu_porcentaje);
     seq_printf(file_proc, "\"processes\":[\n");

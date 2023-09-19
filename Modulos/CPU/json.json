@@ -1,3435 +1,3985 @@
-cat cpu_202003381
 {
-"cpu_total":26591569460488,
-
-"cpu_en_uso":4666512000000,
-"cpu_porcentaje":17,
-"processes":[
-{"pid":1,
-"name":"systemd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-{"pid":370,
-"name":"systemd-journal",
-"state":1,
-"pidPadre":1
-}
-,{"pid":414,
-"name":"systemd-udevd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":707,
-"name":"systemd-resolve",
-"state":1,
-"pidPadre":1
-}
-,{"pid":710,
-"name":"systemd-timesyn",
-"state":1,
-"pidPadre":1
-}
-,{"pid":789,
-"name":"accounts-daemon",
-"state":1,
-"pidPadre":1
-}
-,{"pid":790,
-"name":"acpid",
-"state":1,
-"pidPadre":1
-}
-,{"pid":794,
-"name":"avahi-daemon",
-"state":1,
-"pidPadre":1
-}
-,{"pid":796,
-"name":"bluetoothd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":797,
-"name":"cron",
-"state":1,
-"pidPadre":1
-}
-,{"pid":798,
-"name":"dbus-daemon",
-"state":1,
-"pidPadre":1
-}
-,{"pid":799,
-"name":"NetworkManager",
-"state":1,
-"pidPadre":1
-}
-,{"pid":811,
-"name":"irqbalance",
-"state":1,
-"pidPadre":1
-}
-,{"pid":819,
-"name":"networkd-dispat",
-"state":1,
-"pidPadre":1
-}
-,{"pid":821,
-"name":"polkitd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":823,
-"name":"rsyslogd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":825,
-"name":"snapd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":829,
-"name":"systemd-logind",
-"state":1,
-"pidPadre":1
-}
-,{"pid":831,
-"name":"thermald",
-"state":1,
-"pidPadre":1
-}
-,{"pid":833,
-"name":"udisksd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":835,
-"name":"wpa_supplicant",
-"state":1,
-"pidPadre":1
-}
-,{"pid":902,
-"name":"cupsd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":911,
-"name":"lightdm",
-"state":1,
-"pidPadre":1
-}
-,{"pid":916,
-"name":"containerd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":927,
-"name":"ModemManager",
-"state":1,
-"pidPadre":1
-}
-,{"pid":968,
-"name":"agetty",
-"state":1,
-"pidPadre":1
-}
-,{"pid":986,
-"name":"nginx",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1028,
-"name":"cups-browsed",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1031,
-"name":"kerneloops",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1035,
-"name":"kerneloops",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1180,
-"name":"dockerd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1241,
-"name":"rtkit-daemon",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1525,
-"name":"upowerd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1708,
-"name":"systemd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":1723,
-"name":"gnome-keyring-d",
-"state":1,
-"pidPadre":1
-}
-,{"pid":2065,
-"name":"colord",
-"state":1,
-"pidPadre":1
-}
-,{"pid":2068,
-"name":"csd-printer",
-"state":1,
-"pidPadre":1
-}
-,{"pid":2279,
-"name":"blueman-tray",
-"state":1,
-"pidPadre":1
-}
-,{"pid":2387,
-"name":"mintUpdate",
-"state":1,
-"pidPadre":1
-}
-,{"pid":2449,
-"name":"mintreport-tray",
-"state":1,
-"pidPadre":1
-}
-,{"pid":2487,
-"name":"chrome_crashpad",
-"state":1,
-"pidPadre":1
-}
-,{"pid":3397,
-"name":"cpptools-srv",
-"state":1,
-"pidPadre":1
-}
-,{"pid":4086,
-"name":"packagekitd",
-"state":1,
-"pidPadre":1
-}
-,{"pid":4375,
-"name":"chrome_crashpad",
-"state":1,
-"pidPadre":1
-}
-,{"pid":4377,
-"name":"chrome_crashpad",
-"state":1,
-"pidPadre":1
-}
-,{"pid":4780,
-"name":"cpptools-srv",
-"state":1,
-"pidPadre":1
-}
-
-]}
-,{"pid":2,
-"name":"kthreadd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-{"pid":3,
-"name":"rcu_gp",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":4,
-"name":"rcu_par_gp",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":5,
-"name":"slub_flushwq",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":6,
-"name":"netns",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":10,
-"name":"mm_percpu_wq",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":11,
-"name":"rcu_tasks_rude_",
-"state":1,
-"pidPadre":2
-}
-,{"pid":12,
-"name":"rcu_tasks_trace",
-"state":1,
-"pidPadre":2
-}
-,{"pid":13,
-"name":"ksoftirqd/0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":14,
-"name":"rcu_sched",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":15,
-"name":"migration/0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":16,
-"name":"idle_inject/0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":18,
-"name":"cpuhp/0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":19,
-"name":"cpuhp/1",
-"state":1,
-"pidPadre":2
-}
-,{"pid":20,
-"name":"idle_inject/1",
-"state":1,
-"pidPadre":2
-}
-,{"pid":21,
-"name":"migration/1",
-"state":1,
-"pidPadre":2
-}
-,{"pid":22,
-"name":"ksoftirqd/1",
-"state":1,
-"pidPadre":2
-}
-,{"pid":24,
-"name":"kworker/1:0H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":25,
-"name":"cpuhp/2",
-"state":1,
-"pidPadre":2
-}
-,{"pid":26,
-"name":"idle_inject/2",
-"state":1,
-"pidPadre":2
-}
-,{"pid":27,
-"name":"migration/2",
-"state":1,
-"pidPadre":2
-}
-,{"pid":28,
-"name":"ksoftirqd/2",
-"state":1,
-"pidPadre":2
-}
-,{"pid":30,
-"name":"kworker/2:0H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":31,
-"name":"cpuhp/3",
-"state":1,
-"pidPadre":2
-}
-,{"pid":32,
-"name":"idle_inject/3",
-"state":1,
-"pidPadre":2
-}
-,{"pid":33,
-"name":"migration/3",
-"state":1,
-"pidPadre":2
-}
-,{"pid":34,
-"name":"ksoftirqd/3",
-"state":1,
-"pidPadre":2
-}
-,{"pid":36,
-"name":"kworker/3:0H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":37,
-"name":"kdevtmpfs",
-"state":1,
-"pidPadre":2
-}
-,{"pid":38,
-"name":"inet_frag_wq",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":39,
-"name":"kauditd",
-"state":1,
-"pidPadre":2
-}
-,{"pid":40,
-"name":"khungtaskd",
-"state":1,
-"pidPadre":2
-}
-,{"pid":41,
-"name":"oom_reaper",
-"state":1,
-"pidPadre":2
-}
-,{"pid":42,
-"name":"writeback",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":43,
-"name":"kcompactd0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":44,
-"name":"ksmd",
-"state":1,
-"pidPadre":2
-}
-,{"pid":45,
-"name":"khugepaged",
-"state":1,
-"pidPadre":2
-}
-,{"pid":92,
-"name":"kintegrityd",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":93,
-"name":"kblockd",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":94,
-"name":"blkcg_punt_bio",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":95,
-"name":"tpm_dev_wq",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":96,
-"name":"ata_sff",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":97,
-"name":"md",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":98,
-"name":"edac-poller",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":99,
-"name":"devfreq_wq",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":100,
-"name":"watchdogd",
-"state":1,
-"pidPadre":2
-}
-,{"pid":102,
-"name":"kworker/0:1H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":104,
-"name":"kswapd0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":105,
-"name":"ecryptfs-kthrea",
-"state":1,
-"pidPadre":2
-}
-,{"pid":108,
-"name":"kthrotld",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":109,
-"name":"irq/122-pciehp",
-"state":1,
-"pidPadre":2
-}
-,{"pid":110,
-"name":"irq/123-aerdrv",
-"state":1,
-"pidPadre":2
-}
-,{"pid":111,
-"name":"irq/124-aerdrv",
-"state":1,
-"pidPadre":2
-}
-,{"pid":113,
-"name":"acpi_thermal_pm",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":116,
-"name":"vfio-irqfd-clea",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":117,
-"name":"mld",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":118,
-"name":"kworker/1:1H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":119,
-"name":"ipv6_addrconf",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":129,
-"name":"kstrp",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":132,
-"name":"zswap-shrink",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":140,
-"name":"charger_manager",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":194,
-"name":"scsi_eh_0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":195,
-"name":"kworker/3:1H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":196,
-"name":"scsi_tmf_0",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":197,
-"name":"kworker/2:1H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":199,
-"name":"scsi_eh_1",
-"state":1,
-"pidPadre":2
-}
-,{"pid":200,
-"name":"scsi_tmf_1",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":201,
-"name":"scsi_eh_2",
-"state":1,
-"pidPadre":2
-}
-,{"pid":202,
-"name":"scsi_tmf_2",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":203,
-"name":"cryptd",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":237,
-"name":"card0-crtc0",
-"state":1,
-"pidPadre":2
-}
-,{"pid":238,
-"name":"card0-crtc1",
-"state":1,
-"pidPadre":2
-}
-,{"pid":239,
-"name":"card0-crtc2",
-"state":1,
-"pidPadre":2
-}
-,{"pid":317,
-"name":"jbd2/sda6-8",
-"state":1,
-"pidPadre":2
-}
-,{"pid":318,
-"name":"ext4-rsv-conver",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":539,
-"name":"cfg80211",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":563,
-"name":"irq/130-rtw88_p",
-"state":1,
-"pidPadre":2
-}
-,{"pid":646,
-"name":"spl_system_task",
-"state":1,
-"pidPadre":2
-}
-,{"pid":647,
-"name":"spl_delay_taskq",
-"state":1,
-"pidPadre":2
-}
-,{"pid":648,
-"name":"spl_dynamic_tas",
-"state":1,
-"pidPadre":2
-}
-,{"pid":649,
-"name":"spl_kmem_cache",
-"state":1,
-"pidPadre":2
-}
-,{"pid":653,
-"name":"zvol",
-"state":1,
-"pidPadre":2
-}
-,{"pid":654,
-"name":"arc_prune",
-"state":1,
-"pidPadre":2
-}
-,{"pid":655,
-"name":"arc_evict",
-"state":1,
-"pidPadre":2
-}
-,{"pid":656,
-"name":"arc_reap",
-"state":1,
-"pidPadre":2
-}
-,{"pid":657,
-"name":"dbu_evict",
-"state":1,
-"pidPadre":2
-}
-,{"pid":658,
-"name":"dbuf_evict",
-"state":1,
-"pidPadre":2
-}
-,{"pid":659,
-"name":"z_vdev_file",
-"state":1,
-"pidPadre":2
-}
-,{"pid":660,
-"name":"l2arc_feed",
-"state":1,
-"pidPadre":2
-}
-,{"pid":1547,
-"name":"krfcommd",
-"state":1,
-"pidPadre":2
-}
-,{"pid":5139,
-"name":"kworker/0:2H",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":15765,
-"name":"irq/129-mei_me",
-"state":1,
-"pidPadre":2
-}
-,{"pid":20570,
-"name":"kworker/u9:2",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":22429,
-"name":"kworker/u8:2",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":22959,
-"name":"kworker/1:3",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":22962,
-"name":"kworker/u9:1",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":22976,
-"name":"kworker/u8:0",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":23384,
-"name":"kworker/3:1",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":23391,
-"name":"kworker/2:2",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":24877,
-"name":"kworker/0:0",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":25718,
-"name":"kworker/1:2",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":25735,
-"name":"kworker/0:1",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":25738,
-"name":"kworker/u8:3",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":25848,
-"name":"kworker/2:3",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":26195,
-"name":"kworker/3:0",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":26225,
-"name":"kworker/3:3",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":26634,
-"name":"kworker/1:0",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":27019,
-"name":"kworker/0:2",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":27020,
-"name":"kworker/0:3",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":27120,
-"name":"kworker/u8:1",
-"state":1026,
-"pidPadre":2
-}
-,{"pid":27124,
-"name":"kworker/u9:0",
-"state":1026,
-"pidPadre":2
-}
-
-]}
-,{"pid":3,
-"name":"rcu_gp",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4,
-"name":"rcu_par_gp",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":5,
-"name":"slub_flushwq",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":6,
-"name":"netns",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":10,
-"name":"mm_percpu_wq",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":11,
-"name":"rcu_tasks_rude_",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":12,
-"name":"rcu_tasks_trace",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":13,
-"name":"ksoftirqd/0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":14,
-"name":"rcu_sched",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":15,
-"name":"migration/0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":16,
-"name":"idle_inject/0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":18,
-"name":"cpuhp/0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":19,
-"name":"cpuhp/1",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":20,
-"name":"idle_inject/1",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":21,
-"name":"migration/1",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":22,
-"name":"ksoftirqd/1",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":24,
-"name":"kworker/1:0H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":25,
-"name":"cpuhp/2",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":26,
-"name":"idle_inject/2",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":27,
-"name":"migration/2",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":28,
-"name":"ksoftirqd/2",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":30,
-"name":"kworker/2:0H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":31,
-"name":"cpuhp/3",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":32,
-"name":"idle_inject/3",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":33,
-"name":"migration/3",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":34,
-"name":"ksoftirqd/3",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":36,
-"name":"kworker/3:0H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":37,
-"name":"kdevtmpfs",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":38,
-"name":"inet_frag_wq",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":39,
-"name":"kauditd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":40,
-"name":"khungtaskd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":41,
-"name":"oom_reaper",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":42,
-"name":"writeback",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":43,
-"name":"kcompactd0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":44,
-"name":"ksmd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":45,
-"name":"khugepaged",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":92,
-"name":"kintegrityd",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":93,
-"name":"kblockd",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":94,
-"name":"blkcg_punt_bio",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":95,
-"name":"tpm_dev_wq",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":96,
-"name":"ata_sff",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":97,
-"name":"md",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":98,
-"name":"edac-poller",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":99,
-"name":"devfreq_wq",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":100,
-"name":"watchdogd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":102,
-"name":"kworker/0:1H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":104,
-"name":"kswapd0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":105,
-"name":"ecryptfs-kthrea",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":108,
-"name":"kthrotld",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":109,
-"name":"irq/122-pciehp",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":110,
-"name":"irq/123-aerdrv",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":111,
-"name":"irq/124-aerdrv",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":113,
-"name":"acpi_thermal_pm",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":116,
-"name":"vfio-irqfd-clea",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":117,
-"name":"mld",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":118,
-"name":"kworker/1:1H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":119,
-"name":"ipv6_addrconf",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":129,
-"name":"kstrp",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":132,
-"name":"zswap-shrink",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":140,
-"name":"charger_manager",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":194,
-"name":"scsi_eh_0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":195,
-"name":"kworker/3:1H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":196,
-"name":"scsi_tmf_0",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":197,
-"name":"kworker/2:1H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":199,
-"name":"scsi_eh_1",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":200,
-"name":"scsi_tmf_1",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":201,
-"name":"scsi_eh_2",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":202,
-"name":"scsi_tmf_2",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":203,
-"name":"cryptd",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":237,
-"name":"card0-crtc0",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":238,
-"name":"card0-crtc1",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":239,
-"name":"card0-crtc2",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":317,
-"name":"jbd2/sda6-8",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":318,
-"name":"ext4-rsv-conver",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":370,
-"name":"systemd-journal",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":414,
-"name":"systemd-udevd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":539,
-"name":"cfg80211",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":563,
-"name":"irq/130-rtw88_p",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":646,
-"name":"spl_system_task",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":647,
-"name":"spl_delay_taskq",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":648,
-"name":"spl_dynamic_tas",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":649,
-"name":"spl_kmem_cache",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":653,
-"name":"zvol",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":654,
-"name":"arc_prune",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":655,
-"name":"arc_evict",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":656,
-"name":"arc_reap",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":657,
-"name":"dbu_evict",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":658,
-"name":"dbuf_evict",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":659,
-"name":"z_vdev_file",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":660,
-"name":"l2arc_feed",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":707,
-"name":"systemd-resolve",
-"user": 101,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":710,
-"name":"systemd-timesyn",
-"user": 103,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":789,
-"name":"accounts-daemon",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":790,
-"name":"acpid",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":794,
-"name":"avahi-daemon",
-"user": 122,
-"state":1,
-"ram":0,
-"child":[
-{"pid":842,
-"name":"avahi-daemon",
-"state":1,
-"pidPadre":794
-}
-
-]}
-,{"pid":796,
-"name":"bluetoothd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":797,
-"name":"cron",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":798,
-"name":"dbus-daemon",
-"user": 102,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":799,
-"name":"NetworkManager",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":811,
-"name":"irqbalance",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":819,
-"name":"networkd-dispat",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":821,
-"name":"polkitd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":823,
-"name":"rsyslogd",
-"user": 104,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":825,
-"name":"snapd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":829,
-"name":"systemd-logind",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":831,
-"name":"thermald",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":833,
-"name":"udisksd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":835,
-"name":"wpa_supplicant",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":842,
-"name":"avahi-daemon",
-"user": 122,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":902,
-"name":"cupsd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":911,
-"name":"lightdm",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-{"pid":962,
-"name":"Xorg",
-"state":1,
-"pidPadre":911
-}
-,{"pid":1696,
-"name":"lightdm",
-"state":1,
-"pidPadre":911
-}
-
-]}
-,{"pid":916,
-"name":"containerd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":927,
-"name":"ModemManager",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":962,
-"name":"Xorg",
-"user": 0,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":968,
-"name":"agetty",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":986,
-"name":"nginx",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-{"pid":987,
-"name":"nginx",
-"state":1,
-"pidPadre":986
-}
-,{"pid":988,
-"name":"nginx",
-"state":1,
-"pidPadre":986
-}
-,{"pid":989,
-"name":"nginx",
-"state":1,
-"pidPadre":986
-}
-,{"pid":990,
-"name":"nginx",
-"state":1,
-"pidPadre":986
-}
-
-]}
-,{"pid":987,
-"name":"nginx",
-"user": 33,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":988,
-"name":"nginx",
-"user": 33,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":989,
-"name":"nginx",
-"user": 33,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":990,
-"name":"nginx",
-"user": 33,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1028,
-"name":"cups-browsed",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1031,
-"name":"kerneloops",
-"user": 109,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1035,
-"name":"kerneloops",
-"user": 109,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1180,
-"name":"dockerd",
-"user": 0,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":1241,
-"name":"rtkit-daemon",
-"user": 107,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1525,
-"name":"upowerd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1547,
-"name":"krfcommd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1696,
-"name":"lightdm",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-{"pid":1728,
-"name":"cinnamon-sessio",
-"state":1,
-"pidPadre":1696
-}
-
-]}
-,{"pid":1708,
-"name":"systemd",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":1709,
-"name":"(sd-pam)",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":1719,
-"name":"pipewire",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":1720,
-"name":"pulseaudio",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":1726,
-"name":"dbus-daemon",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":1935,
-"name":"gvfsd",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":1940,
-"name":"gvfsd-fuse",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":1947,
-"name":"at-spi-bus-laun",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":1957,
-"name":"at-spi2-registr",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2031,
-"name":"dconf-service",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2034,
-"name":"gvfs-udisks2-vo",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2045,
-"name":"gvfs-mtp-volume",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2056,
-"name":"gvfs-goa-volume",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2064,
-"name":"goa-daemon",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2090,
-"name":"gvfs-gphoto2-vo",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2088,
-"name":"goa-identity-se",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2098,
-"name":"gvfs-afc-volume",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2259,
-"name":"evolution-sourc",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2282,
-"name":"obexd",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2292,
-"name":"evolution-calen",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2318,
-"name":"evolution-addre",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2356,
-"name":"gvfsd-metadata",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2501,
-"name":"xdg-desktop-por",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2505,
-"name":"xdg-document-po",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2510,
-"name":"xdg-permission-",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":2522,
-"name":"xdg-desktop-por",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":16022,
-"name":"xreaderd",
-"state":1,
-"pidPadre":1708
-}
-,{"pid":16204,
-"name":"gnome-terminal-",
-"state":1,
-"pidPadre":1708
-}
-
-]}
-,{"pid":1709,
-"name":"(sd-pam)",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1719,
-"name":"pipewire",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1720,
-"name":"pulseaudio",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1723,
-"name":"gnome-keyring-d",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1726,
-"name":"dbus-daemon",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1728,
-"name":"cinnamon-sessio",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":1970,
-"name":"csd-color",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1973,
-"name":"csd-automount",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1974,
-"name":"csd-keyboard",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1975,
-"name":"csd-power",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1976,
-"name":"csd-wacom",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1977,
-"name":"csd-housekeepin",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1978,
-"name":"csd-background",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1979,
-"name":"csd-media-keys",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":1986,
-"name":"csd-xsettings",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2000,
-"name":"csd-a11y-settin",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2008,
-"name":"csd-screensaver",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2018,
-"name":"csd-print-notif",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2022,
-"name":"csd-clipboard",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2109,
-"name":"cinnamon-launch",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2143,
-"name":"xapp-sn-watcher",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2158,
-"name":"caribou",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2172,
-"name":"nemo-desktop",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2187,
-"name":"polkit-gnome-au",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2192,
-"name":"agent",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2197,
-"name":"evolution-alarm",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2199,
-"name":"nm-applet",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2204,
-"name":"cinnamon-killer",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2205,
-"name":"blueman-applet",
-"state":1,
-"pidPadre":1728
-}
-,{"pid":2424,
-"name":"applet.py",
-"state":1,
-"pidPadre":1728
-}
-
-]}
-,{"pid":1935,
-"name":"gvfsd",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2304,
-"name":"gvfsd-trash",
-"state":1,
-"pidPadre":1935
-}
-
-]}
-,{"pid":1940,
-"name":"gvfsd-fuse",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1947,
-"name":"at-spi-bus-laun",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":1954,
-"name":"dbus-daemon",
-"state":1,
-"pidPadre":1947
-}
-
-]}
-,{"pid":1954,
-"name":"dbus-daemon",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1957,
-"name":"at-spi2-registr",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1970,
-"name":"csd-color",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1973,
-"name":"csd-automount",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1974,
-"name":"csd-keyboard",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1975,
-"name":"csd-power",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1976,
-"name":"csd-wacom",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1977,
-"name":"csd-housekeepin",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1978,
-"name":"csd-background",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1979,
-"name":"csd-media-keys",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":1986,
-"name":"csd-xsettings",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2000,
-"name":"csd-a11y-settin",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2008,
-"name":"csd-screensaver",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2018,
-"name":"csd-print-notif",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2022,
-"name":"csd-clipboard",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2031,
-"name":"dconf-service",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2034,
-"name":"gvfs-udisks2-vo",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2045,
-"name":"gvfs-mtp-volume",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2056,
-"name":"gvfs-goa-volume",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2064,
-"name":"goa-daemon",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2065,
-"name":"colord",
-"user": 124,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2068,
-"name":"csd-printer",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2088,
-"name":"goa-identity-se",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2090,
-"name":"gvfs-gphoto2-vo",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2098,
-"name":"gvfs-afc-volume",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2109,
-"name":"cinnamon-launch",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2112,
-"name":"cinnamon",
-"state":1,
-"pidPadre":2109
-}
-
-]}
-,{"pid":2112,
-"name":"cinnamon",
-"user": 1000,
-"state":1,
-"ram":2,
-"child":[
-{"pid":4346,
-"name":"chrome",
-"state":1,
-"pidPadre":2112
-}
-,{"pid":15994,
-"name":"nemo",
-"state":1,
-"pidPadre":2112
-}
-
-]}
-,{"pid":2143,
-"name":"xapp-sn-watcher",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2158,
-"name":"caribou",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2172,
-"name":"nemo-desktop",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2467,
-"name":"code",
-"state":1,
-"pidPadre":2172
-}
-
-]}
-,{"pid":2187,
-"name":"polkit-gnome-au",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2192,
-"name":"agent",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2197,
-"name":"evolution-alarm",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2199,
-"name":"nm-applet",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2204,
-"name":"cinnamon-killer",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2205,
-"name":"blueman-applet",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2259,
-"name":"evolution-sourc",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2279,
-"name":"blueman-tray",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2282,
-"name":"obexd",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2292,
-"name":"evolution-calen",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2304,
-"name":"gvfsd-trash",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2318,
-"name":"evolution-addre",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2356,
-"name":"gvfsd-metadata",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2387,
-"name":"mintUpdate",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":2424,
-"name":"applet.py",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2449,
-"name":"mintreport-tray",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2467,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-{"pid":2471,
-"name":"code",
-"state":1,
-"pidPadre":2467
-}
-,{"pid":2472,
-"name":"code",
-"state":1,
-"pidPadre":2467
-}
-
-]}
-,{"pid":2471,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2507,
-"name":"code",
-"state":1,
-"pidPadre":2471
-}
-
-]}
-,{"pid":2472,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2474,
-"name":"code",
-"state":1,
-"pidPadre":2472
-}
-
-]}
-,{"pid":2474,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2569,
-"name":"code",
-"state":1,
-"pidPadre":2474
-}
-
-]}
-,{"pid":2487,
-"name":"chrome_crashpad",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2501,
-"name":"xdg-desktop-por",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2535,
-"name":"sh",
-"state":1,
-"pidPadre":2501
-}
-
-]}
-,{"pid":2505,
-"name":"xdg-document-po",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2507,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":2510,
-"name":"xdg-permission-",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2516,
-"name":"fusermount3",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2522,
-"name":"xdg-desktop-por",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2535,
-"name":"sh",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":2536,
-"name":"pxgsettings",
-"state":1,
-"pidPadre":2535
-}
-
-]}
-,{"pid":2536,
-"name":"pxgsettings",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2559,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2569,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":3,
-"child":[
-
-]}
-,{"pid":2797,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":2798,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2830,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-{"pid":3277,
-"name":"cpptools",
-"state":1,
-"pidPadre":2830
-}
-,{"pid":17052,
-"name":"code",
-"state":1,
-"pidPadre":2830
-}
-
-]}
-,{"pid":2845,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-{"pid":2864,
-"name":"bash",
-"state":1,
-"pidPadre":2845
-}
-,{"pid":2867,
-"name":"bash",
-"state":1,
-"pidPadre":2845
-}
-
-]}
-,{"pid":2864,
-"name":"bash",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":2867,
-"name":"bash",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":3277,
-"name":"cpptools",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":3397,
-"name":"cpptools-srv",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4086,
-"name":"packagekitd",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4346,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":4,
-"child":[
-{"pid":4351,
-"name":"cat",
-"state":1,
-"pidPadre":4346
-}
-,{"pid":4352,
-"name":"cat",
-"state":1,
-"pidPadre":4346
-}
-,{"pid":4383,
-"name":"chrome",
-"state":1,
-"pidPadre":4346
-}
-,{"pid":4384,
-"name":"chrome",
-"state":1,
-"pidPadre":4346
-}
-
-]}
-,{"pid":4351,
-"name":"cat",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4352,
-"name":"cat",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4375,
-"name":"chrome_crashpad",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4377,
-"name":"chrome_crashpad",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4383,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":4410,
-"name":"chrome",
-"state":1,
-"pidPadre":4383
-}
-
-]}
-,{"pid":4384,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":4385,
-"name":"nacl_helper",
-"state":1,
-"pidPadre":4384
-}
-,{"pid":4388,
-"name":"chrome",
-"state":1,
-"pidPadre":4384
-}
-
-]}
-,{"pid":4385,
-"name":"nacl_helper",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4388,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":4424,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":5355,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":16131,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":16486,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":16507,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":16857,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":16946,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":20893,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":20923,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":20935,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":27021,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":27033,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":27074,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":27088,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-,{"pid":27105,
-"name":"chrome",
-"state":1,
-"pidPadre":4388
-}
-
-]}
-,{"pid":4410,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":2,
-"child":[
-
-]}
-,{"pid":4415,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":4424,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":4780,
-"name":"cpptools-srv",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":5139,
-"name":"kworker/0:2H",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":5355,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":2,
-"child":[
-
-]}
-,{"pid":15765,
-"name":"irq/129-mei_me",
-"user": 0,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":15994,
-"name":"nemo",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-{"pid":16016,
-"name":"xreader",
-"state":1,
-"pidPadre":15994
-}
-
-]}
-,{"pid":16016,
-"name":"xreader",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-{"pid":16037,
-"name":"WebKitNetworkPr",
-"state":1,
-"pidPadre":16016
-}
-
-]}
-,{"pid":16022,
-"name":"xreaderd",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":16037,
-"name":"WebKitNetworkPr",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":16131,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":16204,
-"name":"gnome-terminal-",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":16229,
-"name":"bash",
-"state":1,
-"pidPadre":16204
-}
-
-]}
-,{"pid":16229,
-"name":"bash",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-{"pid":27538,
-"name":"cat",
-"state":0,
-"pidPadre":16229
-}
-
-]}
-,{"pid":16486,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":16507,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":16784,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":16857,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":16946,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":17052,
-"name":"code",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":20570,
-"name":"kworker/u9:2",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":20893,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":2,
-"child":[
-
-]}
-,{"pid":20923,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":2,
-"child":[
-
-]}
-,{"pid":20935,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":22429,
-"name":"kworker/u8:2",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":22959,
-"name":"kworker/1:3",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":22962,
-"name":"kworker/u9:1",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":22976,
-"name":"kworker/u8:0",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":23384,
-"name":"kworker/3:1",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":23391,
-"name":"kworker/2:2",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":24877,
-"name":"kworker/0:0",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":25718,
-"name":"kworker/1:2",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":25735,
-"name":"kworker/0:1",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":25738,
-"name":"kworker/u8:3",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":25848,
-"name":"kworker/2:3",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":26195,
-"name":"kworker/3:0",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":26225,
-"name":"kworker/3:3",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":26634,
-"name":"kworker/1:0",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":27019,
-"name":"kworker/0:2",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":27020,
-"name":"kworker/0:3",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":27021,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":27033,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":27074,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":27088,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":1,
-"child":[
-
-]}
-,{"pid":27105,
-"name":"chrome",
-"user": 1000,
-"state":1,
-"ram":0,
-"child":[
-
-]}
-,{"pid":27120,
-"name":"kworker/u8:1",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":27124,
-"name":"kworker/u9:0",
-"user": 0,
-"state":1026,
-"ram":0,
-"child":[
-
-]}
-,{"pid":27538,
-"name":"cat",
-"user": 1000,
-"state":0,
-"ram":0,
-"child":[
-
-]}
-],
-"running":1,
-"sleeping":209,
-"zombie":0,
-"stopped":57,
-"total":267
-}
+    "RAM":{
+    "Total_Ram":8010884,
+    "Ram_en_Uso":7115908,
+    "Ram_libre":894976,
+    "Porcentaje_en_uso":88
+    },
+    "CPU":{
+        "cpu_total":5003885859543,
+        
+        "cpu_en_uso":2779936000000,
+        "cpu_porcentaje":55,
+        "processes":[
+        {"pid":1,
+        "name":"systemd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":368,
+        "name":"systemd-journal",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":412,
+        "name":"systemd-udevd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":704,
+        "name":"systemd-resolve",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":709,
+        "name":"systemd-timesyn",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":871,
+        "name":"accounts-daemon",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":872,
+        "name":"acpid",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":876,
+        "name":"avahi-daemon",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":878,
+        "name":"bluetoothd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":879,
+        "name":"cron",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":880,
+        "name":"dbus-daemon",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":881,
+        "name":"NetworkManager",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":888,
+        "name":"irqbalance",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":892,
+        "name":"networkd-dispat",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":893,
+        "name":"polkitd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":894,
+        "name":"rsyslogd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":896,
+        "name":"snapd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":899,
+        "name":"systemd-logind",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":900,
+        "name":"thermald",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":902,
+        "name":"udisksd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":903,
+        "name":"wpa_supplicant",
+        "state":2,
+        "pidPadre":1
+        }
+        ,{"pid":905,
+        "name":"zed",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":974,
+        "name":"cupsd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":985,
+        "name":"containerd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":987,
+        "name":"ModemManager",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":992,
+        "name":"lightdm",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1042,
+        "name":"agetty",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1058,
+        "name":"nginx",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1111,
+        "name":"cups-browsed",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1134,
+        "name":"kerneloops",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1136,
+        "name":"kerneloops",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1244,
+        "name":"dockerd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1311,
+        "name":"rtkit-daemon",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1408,
+        "name":"upowerd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1724,
+        "name":"systemd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":1736,
+        "name":"gnome-keyring-d",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":2072,
+        "name":"colord",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":2077,
+        "name":"csd-printer",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":2270,
+        "name":"blueman-tray",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":2400,
+        "name":"mintUpdate",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":2465,
+        "name":"mintreport-tray",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":2806,
+        "name":"chrome_crashpad",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":6014,
+        "name":"packagekitd",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":6138,
+        "name":"chrome_crashpad",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":6141,
+        "name":"chrome_crashpad",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":22642,
+        "name":"cpptools-srv",
+        "state":1,
+        "pidPadre":1
+        }
+        ,{"pid":25625,
+        "name":"cpptools-srv",
+        "state":1,
+        "pidPadre":1
+        }
+        
+        ]}
+        ,{"pid":2,
+        "name":"kthreadd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":3,
+        "name":"rcu_gp",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":4,
+        "name":"rcu_par_gp",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":5,
+        "name":"slub_flushwq",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":6,
+        "name":"netns",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":8,
+        "name":"kworker/0:0H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":10,
+        "name":"mm_percpu_wq",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":11,
+        "name":"rcu_tasks_rude_",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":12,
+        "name":"rcu_tasks_trace",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":13,
+        "name":"ksoftirqd/0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":14,
+        "name":"rcu_sched",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":15,
+        "name":"migration/0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":16,
+        "name":"idle_inject/0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":18,
+        "name":"cpuhp/0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":19,
+        "name":"cpuhp/1",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":20,
+        "name":"idle_inject/1",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":21,
+        "name":"migration/1",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":22,
+        "name":"ksoftirqd/1",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":24,
+        "name":"kworker/1:0H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25,
+        "name":"cpuhp/2",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":26,
+        "name":"idle_inject/2",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":27,
+        "name":"migration/2",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":28,
+        "name":"ksoftirqd/2",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":30,
+        "name":"kworker/2:0H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":31,
+        "name":"cpuhp/3",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":32,
+        "name":"idle_inject/3",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":33,
+        "name":"migration/3",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":34,
+        "name":"ksoftirqd/3",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":36,
+        "name":"kworker/3:0H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":37,
+        "name":"kdevtmpfs",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":38,
+        "name":"inet_frag_wq",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":39,
+        "name":"kauditd",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":40,
+        "name":"khungtaskd",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":41,
+        "name":"oom_reaper",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":42,
+        "name":"writeback",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":43,
+        "name":"kcompactd0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":44,
+        "name":"ksmd",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":45,
+        "name":"khugepaged",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":92,
+        "name":"kintegrityd",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":93,
+        "name":"kblockd",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":94,
+        "name":"blkcg_punt_bio",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":95,
+        "name":"tpm_dev_wq",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":96,
+        "name":"ata_sff",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":97,
+        "name":"md",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":98,
+        "name":"edac-poller",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":99,
+        "name":"devfreq_wq",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":100,
+        "name":"watchdogd",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":103,
+        "name":"kworker/0:1H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":105,
+        "name":"kswapd0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":106,
+        "name":"ecryptfs-kthrea",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":108,
+        "name":"kthrotld",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":109,
+        "name":"irq/122-pciehp",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":110,
+        "name":"irq/123-aerdrv",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":111,
+        "name":"irq/124-aerdrv",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":113,
+        "name":"acpi_thermal_pm",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":116,
+        "name":"vfio-irqfd-clea",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":117,
+        "name":"mld",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":118,
+        "name":"kworker/2:1H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":119,
+        "name":"ipv6_addrconf",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":129,
+        "name":"kstrp",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":132,
+        "name":"zswap-shrink",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":140,
+        "name":"charger_manager",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":191,
+        "name":"scsi_eh_0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":192,
+        "name":"scsi_tmf_0",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":193,
+        "name":"scsi_eh_1",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":194,
+        "name":"scsi_tmf_1",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":195,
+        "name":"scsi_eh_2",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":196,
+        "name":"scsi_tmf_2",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":198,
+        "name":"cryptd",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":207,
+        "name":"kworker/1:1H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":208,
+        "name":"kworker/3:1H",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":234,
+        "name":"card0-crtc0",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":235,
+        "name":"card0-crtc1",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":236,
+        "name":"card0-crtc2",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":315,
+        "name":"jbd2/sda6-8",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":316,
+        "name":"ext4-rsv-conver",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":476,
+        "name":"irq/129-mei_me",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":516,
+        "name":"cfg80211",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":569,
+        "name":"irq/131-rtw88_p",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":643,
+        "name":"spl_system_task",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":644,
+        "name":"spl_delay_taskq",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":645,
+        "name":"spl_dynamic_tas",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":646,
+        "name":"spl_kmem_cache",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":648,
+        "name":"zvol",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":649,
+        "name":"arc_prune",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":650,
+        "name":"arc_evict",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":651,
+        "name":"arc_reap",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":652,
+        "name":"dbu_evict",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":653,
+        "name":"dbuf_evict",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":654,
+        "name":"z_vdev_file",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":655,
+        "name":"l2arc_feed",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":1674,
+        "name":"krfcommd",
+        "state":1,
+        "pidPadre":2
+        }
+        ,{"pid":10801,
+        "name":"kworker/u8:0",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":13608,
+        "name":"kworker/2:2",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":17989,
+        "name":"kworker/u9:0",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":18104,
+        "name":"kworker/3:3",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":19211,
+        "name":"kworker/u9:1",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":19571,
+        "name":"kworker/u8:1",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":19585,
+        "name":"kworker/1:3",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":20460,
+        "name":"kworker/0:3",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":22115,
+        "name":"kworker/1:0",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":23154,
+        "name":"kworker/u8:3",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":24406,
+        "name":"kworker/3:0",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25471,
+        "name":"kworker/u9:3",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25513,
+        "name":"kworker/0:0",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25570,
+        "name":"kworker/2:3",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25571,
+        "name":"kworker/u8:2",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25577,
+        "name":"kworker/1:1",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25645,
+        "name":"kworker/3:1",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":25646,
+        "name":"kworker/3:2",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":26730,
+        "name":"kworker/0:1",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":27081,
+        "name":"kworker/0:2",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":27830,
+        "name":"kworker/1:2",
+        "state":1026,
+        "pidPadre":2
+        }
+        ,{"pid":27849,
+        "name":"kworker/u9:2",
+        "state":1026,
+        "pidPadre":2
+        }
+        
+        ]}
+        ,{"pid":3,
+        "name":"rcu_gp",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":4,
+        "name":"rcu_par_gp",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":5,
+        "name":"slub_flushwq",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6,
+        "name":"netns",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":8,
+        "name":"kworker/0:0H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":10,
+        "name":"mm_percpu_wq",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":11,
+        "name":"rcu_tasks_rude_",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":12,
+        "name":"rcu_tasks_trace",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":13,
+        "name":"ksoftirqd/0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":14,
+        "name":"rcu_sched",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":15,
+        "name":"migration/0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":16,
+        "name":"idle_inject/0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":18,
+        "name":"cpuhp/0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":19,
+        "name":"cpuhp/1",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":20,
+        "name":"idle_inject/1",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":21,
+        "name":"migration/1",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":22,
+        "name":"ksoftirqd/1",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":24,
+        "name":"kworker/1:0H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25,
+        "name":"cpuhp/2",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":26,
+        "name":"idle_inject/2",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":27,
+        "name":"migration/2",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":28,
+        "name":"ksoftirqd/2",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":30,
+        "name":"kworker/2:0H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":31,
+        "name":"cpuhp/3",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":32,
+        "name":"idle_inject/3",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":33,
+        "name":"migration/3",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":34,
+        "name":"ksoftirqd/3",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":36,
+        "name":"kworker/3:0H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":37,
+        "name":"kdevtmpfs",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":38,
+        "name":"inet_frag_wq",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":39,
+        "name":"kauditd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":40,
+        "name":"khungtaskd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":41,
+        "name":"oom_reaper",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":42,
+        "name":"writeback",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":43,
+        "name":"kcompactd0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":44,
+        "name":"ksmd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":45,
+        "name":"khugepaged",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":92,
+        "name":"kintegrityd",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":93,
+        "name":"kblockd",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":94,
+        "name":"blkcg_punt_bio",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":95,
+        "name":"tpm_dev_wq",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":96,
+        "name":"ata_sff",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":97,
+        "name":"md",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":98,
+        "name":"edac-poller",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":99,
+        "name":"devfreq_wq",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":100,
+        "name":"watchdogd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":103,
+        "name":"kworker/0:1H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":105,
+        "name":"kswapd0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":106,
+        "name":"ecryptfs-kthrea",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":108,
+        "name":"kthrotld",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":109,
+        "name":"irq/122-pciehp",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":110,
+        "name":"irq/123-aerdrv",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":111,
+        "name":"irq/124-aerdrv",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":113,
+        "name":"acpi_thermal_pm",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":116,
+        "name":"vfio-irqfd-clea",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":117,
+        "name":"mld",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":118,
+        "name":"kworker/2:1H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":119,
+        "name":"ipv6_addrconf",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":129,
+        "name":"kstrp",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":132,
+        "name":"zswap-shrink",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":140,
+        "name":"charger_manager",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":191,
+        "name":"scsi_eh_0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":192,
+        "name":"scsi_tmf_0",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":193,
+        "name":"scsi_eh_1",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":194,
+        "name":"scsi_tmf_1",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":195,
+        "name":"scsi_eh_2",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":196,
+        "name":"scsi_tmf_2",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":198,
+        "name":"cryptd",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":207,
+        "name":"kworker/1:1H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":208,
+        "name":"kworker/3:1H",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":234,
+        "name":"card0-crtc0",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":235,
+        "name":"card0-crtc1",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":236,
+        "name":"card0-crtc2",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":315,
+        "name":"jbd2/sda6-8",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":316,
+        "name":"ext4-rsv-conver",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":368,
+        "name":"systemd-journal",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":412,
+        "name":"systemd-udevd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":476,
+        "name":"irq/129-mei_me",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":516,
+        "name":"cfg80211",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":569,
+        "name":"irq/131-rtw88_p",
+        "user": 0,
+        "state":0,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":643,
+        "name":"spl_system_task",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":644,
+        "name":"spl_delay_taskq",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":645,
+        "name":"spl_dynamic_tas",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":646,
+        "name":"spl_kmem_cache",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":648,
+        "name":"zvol",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":649,
+        "name":"arc_prune",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":650,
+        "name":"arc_evict",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":651,
+        "name":"arc_reap",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":652,
+        "name":"dbu_evict",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":653,
+        "name":"dbuf_evict",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":654,
+        "name":"z_vdev_file",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":655,
+        "name":"l2arc_feed",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":704,
+        "name":"systemd-resolve",
+        "user": 101,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":709,
+        "name":"systemd-timesyn",
+        "user": 103,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":871,
+        "name":"accounts-daemon",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":872,
+        "name":"acpid",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":876,
+        "name":"avahi-daemon",
+        "user": 122,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":926,
+        "name":"avahi-daemon",
+        "state":1,
+        "pidPadre":876
+        }
+        
+        ]}
+        ,{"pid":878,
+        "name":"bluetoothd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":879,
+        "name":"cron",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":880,
+        "name":"dbus-daemon",
+        "user": 102,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":881,
+        "name":"NetworkManager",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":888,
+        "name":"irqbalance",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":892,
+        "name":"networkd-dispat",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":893,
+        "name":"polkitd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":894,
+        "name":"rsyslogd",
+        "user": 104,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":896,
+        "name":"snapd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":899,
+        "name":"systemd-logind",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":900,
+        "name":"thermald",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":902,
+        "name":"udisksd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":903,
+        "name":"wpa_supplicant",
+        "user": 0,
+        "state":2,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":905,
+        "name":"zed",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":926,
+        "name":"avahi-daemon",
+        "user": 122,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":974,
+        "name":"cupsd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":985,
+        "name":"containerd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":987,
+        "name":"ModemManager",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":992,
+        "name":"lightdm",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":1038,
+        "name":"Xorg",
+        "state":1,
+        "pidPadre":992
+        }
+        ,{"pid":1680,
+        "name":"lightdm",
+        "state":1,
+        "pidPadre":992
+        }
+        
+        ]}
+        ,{"pid":1038,
+        "name":"Xorg",
+        "user": 0,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":1042,
+        "name":"agetty",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1058,
+        "name":"nginx",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":1059,
+        "name":"nginx",
+        "state":1,
+        "pidPadre":1058
+        }
+        ,{"pid":1060,
+        "name":"nginx",
+        "state":1,
+        "pidPadre":1058
+        }
+        ,{"pid":1061,
+        "name":"nginx",
+        "state":1,
+        "pidPadre":1058
+        }
+        ,{"pid":1062,
+        "name":"nginx",
+        "state":1,
+        "pidPadre":1058
+        }
+        
+        ]}
+        ,{"pid":1059,
+        "name":"nginx",
+        "user": 33,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1060,
+        "name":"nginx",
+        "user": 33,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1061,
+        "name":"nginx",
+        "user": 33,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1062,
+        "name":"nginx",
+        "user": 33,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1111,
+        "name":"cups-browsed",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1134,
+        "name":"kerneloops",
+        "user": 109,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1136,
+        "name":"kerneloops",
+        "user": 109,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1244,
+        "name":"dockerd",
+        "user": 0,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":1311,
+        "name":"rtkit-daemon",
+        "user": 107,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1408,
+        "name":"upowerd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1674,
+        "name":"krfcommd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1680,
+        "name":"lightdm",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":1741,
+        "name":"cinnamon-sessio",
+        "state":1,
+        "pidPadre":1680
+        }
+        
+        ]}
+        ,{"pid":1724,
+        "name":"systemd",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":1725,
+        "name":"(sd-pam)",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":1732,
+        "name":"pipewire",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":1733,
+        "name":"pulseaudio",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":1739,
+        "name":"dbus-daemon",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":1948,
+        "name":"gvfsd",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":1953,
+        "name":"gvfsd-fuse",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":1960,
+        "name":"at-spi-bus-laun",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":1970,
+        "name":"at-spi2-registr",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2042,
+        "name":"dconf-service",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2045,
+        "name":"gvfs-udisks2-vo",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2060,
+        "name":"gvfs-mtp-volume",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2066,
+        "name":"gvfs-goa-volume",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2070,
+        "name":"goa-daemon",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2099,
+        "name":"gvfs-gphoto2-vo",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2097,
+        "name":"goa-identity-se",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2107,
+        "name":"gvfs-afc-volume",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2239,
+        "name":"evolution-sourc",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2276,
+        "name":"obexd",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2305,
+        "name":"evolution-calen",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2323,
+        "name":"evolution-addre",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2369,
+        "name":"gvfsd-metadata",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2519,
+        "name":"gnome-terminal-",
+        "state":0,
+        "pidPadre":1724
+        }
+        ,{"pid":2818,
+        "name":"xdg-desktop-por",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2822,
+        "name":"xdg-document-po",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2828,
+        "name":"xdg-permission-",
+        "state":1,
+        "pidPadre":1724
+        }
+        ,{"pid":2839,
+        "name":"xdg-desktop-por",
+        "state":1,
+        "pidPadre":1724
+        }
+        
+        ]}
+        ,{"pid":1725,
+        "name":"(sd-pam)",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1732,
+        "name":"pipewire",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1733,
+        "name":"pulseaudio",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1736,
+        "name":"gnome-keyring-d",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1739,
+        "name":"dbus-daemon",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1741,
+        "name":"cinnamon-sessio",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":1981,
+        "name":"csd-color",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":1984,
+        "name":"csd-automount",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":1985,
+        "name":"csd-keyboard",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":1986,
+        "name":"csd-power",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":1987,
+        "name":"csd-wacom",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":1988,
+        "name":"csd-housekeepin",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":1998,
+        "name":"csd-background",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":1999,
+        "name":"csd-media-keys",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2006,
+        "name":"csd-xsettings",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2008,
+        "name":"csd-a11y-settin",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2010,
+        "name":"csd-screensaver",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2032,
+        "name":"csd-print-notif",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2033,
+        "name":"csd-clipboard",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2116,
+        "name":"cinnamon-launch",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2150,
+        "name":"xapp-sn-watcher",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2163,
+        "name":"caribou",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2169,
+        "name":"nemo-desktop",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2186,
+        "name":"polkit-gnome-au",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2189,
+        "name":"agent",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2190,
+        "name":"evolution-alarm",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2193,
+        "name":"nm-applet",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2200,
+        "name":"cinnamon-killer",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2201,
+        "name":"blueman-applet",
+        "state":1,
+        "pidPadre":1741
+        }
+        ,{"pid":2437,
+        "name":"applet.py",
+        "state":1,
+        "pidPadre":1741
+        }
+        
+        ]}
+        ,{"pid":1948,
+        "name":"gvfsd",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2332,
+        "name":"gvfsd-trash",
+        "state":1,
+        "pidPadre":1948
+        }
+        
+        ]}
+        ,{"pid":1953,
+        "name":"gvfsd-fuse",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1960,
+        "name":"at-spi-bus-laun",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":1967,
+        "name":"dbus-daemon",
+        "state":1,
+        "pidPadre":1960
+        }
+        
+        ]}
+        ,{"pid":1967,
+        "name":"dbus-daemon",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1970,
+        "name":"at-spi2-registr",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1981,
+        "name":"csd-color",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1984,
+        "name":"csd-automount",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1985,
+        "name":"csd-keyboard",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1986,
+        "name":"csd-power",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1987,
+        "name":"csd-wacom",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1988,
+        "name":"csd-housekeepin",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1998,
+        "name":"csd-background",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":1999,
+        "name":"csd-media-keys",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2006,
+        "name":"csd-xsettings",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2008,
+        "name":"csd-a11y-settin",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2010,
+        "name":"csd-screensaver",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2032,
+        "name":"csd-print-notif",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2033,
+        "name":"csd-clipboard",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2042,
+        "name":"dconf-service",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2045,
+        "name":"gvfs-udisks2-vo",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2060,
+        "name":"gvfs-mtp-volume",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2066,
+        "name":"gvfs-goa-volume",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2070,
+        "name":"goa-daemon",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2072,
+        "name":"colord",
+        "user": 124,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2077,
+        "name":"csd-printer",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2097,
+        "name":"goa-identity-se",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2099,
+        "name":"gvfs-gphoto2-vo",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2107,
+        "name":"gvfs-afc-volume",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2116,
+        "name":"cinnamon-launch",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2119,
+        "name":"cinnamon",
+        "state":1,
+        "pidPadre":2116
+        }
+        
+        ]}
+        ,{"pid":2119,
+        "name":"cinnamon",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        {"pid":6102,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":2119
+        }
+        
+        ]}
+        ,{"pid":2150,
+        "name":"xapp-sn-watcher",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2163,
+        "name":"caribou",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2169,
+        "name":"nemo-desktop",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2457,
+        "name":"xed",
+        "state":1,
+        "pidPadre":2169
+        }
+        ,{"pid":2489,
+        "name":"nemo",
+        "state":1,
+        "pidPadre":2169
+        }
+        ,{"pid":2783,
+        "name":"code",
+        "state":1,
+        "pidPadre":2169
+        }
+        
+        ]}
+        ,{"pid":2186,
+        "name":"polkit-gnome-au",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2189,
+        "name":"agent",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2190,
+        "name":"evolution-alarm",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2193,
+        "name":"nm-applet",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2200,
+        "name":"cinnamon-killer",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2201,
+        "name":"blueman-applet",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2239,
+        "name":"evolution-sourc",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2270,
+        "name":"blueman-tray",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2276,
+        "name":"obexd",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2305,
+        "name":"evolution-calen",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2323,
+        "name":"evolution-addre",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2332,
+        "name":"gvfsd-trash",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2369,
+        "name":"gvfsd-metadata",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2400,
+        "name":"mintUpdate",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":2437,
+        "name":"applet.py",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2457,
+        "name":"xed",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2465,
+        "name":"mintreport-tray",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2489,
+        "name":"nemo",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2519,
+        "name":"gnome-terminal-",
+        "user": 1000,
+        "state":0,
+        "ram":0,
+        "child":[
+        {"pid":2545,
+        "name":"bash",
+        "state":1,
+        "pidPadre":2519
+        }
+        
+        ]}
+        ,{"pid":2545,
+        "name":"bash",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":27892,
+        "name":"cat",
+        "state":0,
+        "pidPadre":2545
+        }
+        
+        ]}
+        ,{"pid":2783,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        {"pid":2787,
+        "name":"code",
+        "state":1,
+        "pidPadre":2783
+        }
+        ,{"pid":2788,
+        "name":"code",
+        "state":1,
+        "pidPadre":2783
+        }
+        
+        ]}
+        ,{"pid":2787,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2829,
+        "name":"code",
+        "state":1,
+        "pidPadre":2787
+        }
+        
+        ]}
+        ,{"pid":2788,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2790,
+        "name":"code",
+        "state":1,
+        "pidPadre":2788
+        }
+        
+        ]}
+        ,{"pid":2790,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2888,
+        "name":"code",
+        "state":1,
+        "pidPadre":2790
+        }
+        
+        ]}
+        ,{"pid":2806,
+        "name":"chrome_crashpad",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2818,
+        "name":"xdg-desktop-por",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2850,
+        "name":"sh",
+        "state":1,
+        "pidPadre":2818
+        }
+        
+        ]}
+        ,{"pid":2822,
+        "name":"xdg-document-po",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2828,
+        "name":"xdg-permission-",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2829,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":2835,
+        "name":"fusermount3",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2839,
+        "name":"xdg-desktop-por",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2850,
+        "name":"sh",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":2851,
+        "name":"pxgsettings",
+        "state":1,
+        "pidPadre":2850
+        }
+        
+        ]}
+        ,{"pid":2851,
+        "name":"pxgsettings",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2878,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":2888,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":4,
+        "child":[
+        
+        ]}
+        ,{"pid":3130,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        {"pid":3195,
+        "name":"bash",
+        "state":1,
+        "pidPadre":3130
+        }
+        ,{"pid":3197,
+        "name":"bash",
+        "state":1,
+        "pidPadre":3130
+        }
+        ,{"pid":3199,
+        "name":"bash",
+        "state":1,
+        "pidPadre":3130
+        }
+        ,{"pid":3201,
+        "name":"bash",
+        "state":1,
+        "pidPadre":3130
+        }
+        
+        ]}
+        ,{"pid":3141,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":3142,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":3176,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        {"pid":4021,
+        "name":"gopls",
+        "state":1,
+        "pidPadre":3176
+        }
+        ,{"pid":4104,
+        "name":"code",
+        "state":1,
+        "pidPadre":3176
+        }
+        ,{"pid":4105,
+        "name":"code",
+        "state":1,
+        "pidPadre":3176
+        }
+        ,{"pid":4295,
+        "name":"code",
+        "state":1,
+        "pidPadre":3176
+        }
+        ,{"pid":22575,
+        "name":"cpptools",
+        "state":1,
+        "pidPadre":3176
+        }
+        
+        ]}
+        ,{"pid":3195,
+        "name":"bash",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":3197,
+        "name":"bash",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":3199,
+        "name":"bash",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":26917,
+        "name":"go",
+        "state":1,
+        "pidPadre":3199
+        }
+        
+        ]}
+        ,{"pid":3201,
+        "name":"bash",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":15322,
+        "name":"npm run dev",
+        "state":1,
+        "pidPadre":3201
+        }
+        
+        ]}
+        ,{"pid":4021,
+        "name":"gopls",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":4104,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":4105,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        {"pid":4132,
+        "name":"code",
+        "state":1,
+        "pidPadre":4105
+        }
+        
+        ]}
+        ,{"pid":4132,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":4295,
+        "name":"code",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":6014,
+        "name":"packagekitd",
+        "user": 0,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6102,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":5,
+        "child":[
+        {"pid":6107,
+        "name":"cat",
+        "state":1,
+        "pidPadre":6102
+        }
+        ,{"pid":6108,
+        "name":"cat",
+        "state":1,
+        "pidPadre":6102
+        }
+        ,{"pid":6150,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6102
+        }
+        ,{"pid":6151,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6102
+        }
+        
+        ]}
+        ,{"pid":6107,
+        "name":"cat",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6108,
+        "name":"cat",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6138,
+        "name":"chrome_crashpad",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6141,
+        "name":"chrome_crashpad",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6150,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":6191,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6150
+        }
+        
+        ]}
+        ,{"pid":6151,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":6152,
+        "name":"nacl_helper",
+        "state":1,
+        "pidPadre":6151
+        }
+        ,{"pid":6156,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6151
+        }
+        
+        ]}
+        ,{"pid":6152,
+        "name":"nacl_helper",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6156,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":6205,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":6345,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":6382,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":7403,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":7481,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":8982,
+        "name":"chrome",
+        "state":0,
+        "pidPadre":6156
+        }
+        ,{"pid":9015,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9040,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9081,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9086,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9093,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9102,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9114,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9122,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9127,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9132,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9139,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9144,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9156,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9161,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9168,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9197,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9198,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9208,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9223,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9224,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9247,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9282,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9311,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9328,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":9351,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":10453,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":13669,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":17903,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":17962,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":19203,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":19255,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":19273,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":19390,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":23118,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":23173,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":26870,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        ,{"pid":27719,
+        "name":"chrome",
+        "state":1,
+        "pidPadre":6156
+        }
+        
+        ]}
+        ,{"pid":6191,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":6196,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":6205,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":6345,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":6382,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":7403,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":7481,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":8982,
+        "name":"chrome",
+        "user": 1000,
+        "state":0,
+        "ram":10,
+        "child":[
+        
+        ]}
+        ,{"pid":9015,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9040,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9081,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9086,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9093,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9102,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9114,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9122,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9127,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9132,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9139,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9144,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9156,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9161,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9168,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9197,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9198,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9208,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9223,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9224,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9247,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9282,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9311,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9328,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":9351,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":10453,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":10801,
+        "name":"kworker/u8:0",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":13608,
+        "name":"kworker/2:2",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":13669,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":15322,
+        "name":"npm run dev",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":15340,
+        "name":"sh",
+        "state":1,
+        "pidPadre":15322
+        }
+        
+        ]}
+        ,{"pid":15340,
+        "name":"sh",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":15341,
+        "name":"node",
+        "state":1,
+        "pidPadre":15340
+        }
+        
+        ]}
+        ,{"pid":15341,
+        "name":"node",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        {"pid":26881,
+        "name":"node",
+        "state":1,
+        "pidPadre":15341
+        }
+        
+        ]}
+        ,{"pid":16239,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":17903,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":4,
+        "child":[
+        
+        ]}
+        ,{"pid":17962,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":17989,
+        "name":"kworker/u9:0",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":18104,
+        "name":"kworker/3:3",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":19203,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":19211,
+        "name":"kworker/u9:1",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":19255,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":19273,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":19390,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":19571,
+        "name":"kworker/u8:1",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":19585,
+        "name":"kworker/1:3",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":20460,
+        "name":"kworker/0:3",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":22115,
+        "name":"kworker/1:0",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":22575,
+        "name":"cpptools",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":22642,
+        "name":"cpptools-srv",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":23118,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":2,
+        "child":[
+        
+        ]}
+        ,{"pid":23154,
+        "name":"kworker/u8:3",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":23173,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":24406,
+        "name":"kworker/3:0",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25471,
+        "name":"kworker/u9:3",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25513,
+        "name":"kworker/0:0",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25570,
+        "name":"kworker/2:3",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25571,
+        "name":"kworker/u8:2",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25577,
+        "name":"kworker/1:1",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25625,
+        "name":"cpptools-srv",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25645,
+        "name":"kworker/3:1",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":25646,
+        "name":"kworker/3:2",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":26730,
+        "name":"kworker/0:1",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":26870,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":1,
+        "child":[
+        
+        ]}
+        ,{"pid":26881,
+        "name":"node",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":26917,
+        "name":"go",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":26985,
+        "name":"main",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":27081,
+        "name":"kworker/0:2",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":27719,
+        "name":"chrome",
+        "user": 1000,
+        "state":1,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":27830,
+        "name":"kworker/1:2",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":27849,
+        "name":"kworker/u9:2",
+        "user": 0,
+        "state":1026,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ,{"pid":27892,
+        "name":"cat",
+        "user": 1000,
+        "state":0,
+        "ram":0,
+        "child":[
+        
+        ]}
+        ],
+        "running":4,
+        "sleeping":244,
+        "zombie":0,
+        "stopped":61,
+        "total":309
+        }
+        
+        }
+        

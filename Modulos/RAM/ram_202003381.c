@@ -35,7 +35,7 @@ static int escribir_archivo(struct seq_file *archivo, void *v){
     seq_printf(archivo, "\"Ram_en_Uso\":%d,\n", using_ram);
     seq_printf(archivo, "\"Ram_libre\":%d,\n", free_ram);
     seq_printf(archivo, "\"Porcentaje_en_uso\":%d\n", using_percent);
-    seq_printf(archivo, "\"},\n");
+    seq_printf(archivo, "},\n");
     
     return 0;
 }
