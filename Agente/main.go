@@ -13,11 +13,33 @@ type Data struct {
 	Info string `json:"info"`
 }
 
+type Kill struct {
+	IP  string `json:"ip"`
+	PID string `json:"pid"`
+}
+
+type Msg struct {
+	Msg string `json:"msg"`
+}
+
 func main() {
 	//Servidor web
 	http.HandleFunc("/kill", func(w http.ResponseWriter, r *http.Request) {
-		// Maneja la solicitud entrante
-		fmt.Println("Hola desde el servidor!")
+		fmt.Println(("?"))
+		w.Header().Add("content-type", "application/json")
+		var kill Kill
+		json.NewDecoder((r.Body)).Decode(&kill)
+
+		cmd := exec.Command("sh", "-c", "kill -9 ", kill.PID)
+		out, err := cmd.CombinedOutput()
+		if err != nil {
+			fmt.Println(err)
+		}
+		output := string(out[:])
+		var msg Msg
+		msg.Msg = output
+		json.NewEncoder(w).Encode(msg)
+
 	})
 
 	// Inicia el servidor web en el puerto 5000 en una goroutine
@@ -57,8 +79,8 @@ func main() {
 				fmt.Println("Solicitud HTTP exitosa")
 			}
 
-			// Espera 10 segundos antes de realizar la siguiente solicitud
-			time.Sleep(10 * time.Second)
+			// Espera 30 segundos antes de realizar la siguiente solicitud
+			time.Sleep(30 * time.Second)
 		}
 	}()
 
