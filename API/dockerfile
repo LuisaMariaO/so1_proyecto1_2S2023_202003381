@@ -1,0 +1,21 @@
+# Utiliza una imagen base con Node.js
+FROM node:18
+
+# Establece el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copia el archivo package.json y package-lock.json al directorio de trabajo
+COPY package*.json ./
+
+# Instala las dependencias de la aplicación
+RUN npm install
+
+# Copia todos los archivos de tu aplicación al directorio de trabajo
+COPY . .
+
+# Expón el puerto en el que se ejecutará tu aplicación (el mismo que definiste en tu código, en este caso, 8080)
+EXPOSE 8080
+
+# Comando para iniciar la aplicación
+CMD ["node", "src/index.js"]
+#sudo docker build . -t backend

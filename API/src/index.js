@@ -24,35 +24,63 @@ app.use(requestIp.mw());
 //Variable para manejar la coneción mysql
 var mysql = require('mysql2');
 
-const connection = mysql.createConnection({ 
-  host: 'localhost', // host for connection 
-  //port: 3306, // default port for mysql is 3306 
-  user: 'root', // username of the mysql connection 
-  password: 'secret', // password of the mysql connection
-  database: 'proyecto1', // database from which we want to connect out node application 
-  
-  
-  });
+
 
 
   var monitoreo = {}
   var vms = []
 // Raiz
 app.get('/', (req, res) => {
+  const connection = mysql.createConnection({ 
+    host: 'base', // host for connection 
+    //port: 3306, // default port for mysql is 3306 
+    user: 'root', // username of the mysql connection 
+    password: 'secret', // password of the mysql connection
+    database: 'proyecto1', // database from which we want to connect out node application 
+    
+   
+    });
   //Hago la conexion a la base de datos
   connection.connect(function (err) {
     if(err){
         console.log("error occurred while connecting: "+err.message);
+        connection.end()
+        res.send("Error en la conexión con la base de datos :( "+err.message)
     }
     else{
         console.log("connection created with Mysql successfully");
+        connection.end()
+        res.send("Conexión creada correctamente! :D")
     }
   });
-  res.send("Hola mundo :D");
+
+
+ 
 });
 
 //Recibiendo ifo del agente golang
 app.post('/post_info', (req, res) => {
+  const connection = mysql.createConnection({ 
+    host: 'base', // host for connection 
+    //port: 3306, // default port for mysql is 3306 
+    user: 'root', // username of the mysql connection 
+    password: 'secret', // password of the mysql connection
+    database: 'proyecto1', // database from which we want to connect out node application 
+    
+   
+    });
+  //Hago la conexion a la base de datos
+  connection.connect(function (err) {
+    if(err){
+        console.log("error occurred while connecting: "+err.message);
+
+    }
+    else{
+        console.log("connection created with Mysql successfully");
+
+    }
+  });
+
   let data = req.body.info;
   var body = JSON.parse(data)
   //console.log(body.CPU)
@@ -140,32 +168,75 @@ const seconds = dateObject.getSeconds();
     // Cierra la conexión cuando hayas terminado
     //connection.end();
   });
+  //connection.end()
   res.send("Data recibida!")
 });
 
 
 //Obteniendo los valores en tiempo real
 app.post('/monitoreo', (req, res) => {
-
+  const connection = mysql.createConnection({ 
+    host: 'base', // host for connection 
+    //port: 3306, // default port for mysql is 3306 
+    user: 'root', // username of the mysql connection 
+    password: 'secret', // password of the mysql connection
+    database: 'proyecto1', // database from which we want to connect out node application 
+    
+   
+    });
+  //Hago la conexion a la base de datos
+  connection.connect(function (err) {
+    if(err){
+        console.log("error occurred while connecting: "+err.message);
+       
+    }
+    else{
+        console.log("connection created with Mysql successfully");
+     
+    }
+  });
   let ip = req.body.ip
-
+  console.log(ip)
   let respuesta = {}
   let i = 0
-
+  console.log(vms.length)
   while(i<vms.length){
     if (vms[i].ip === ip){
       respuesta = vms[i]
-      break
+      res.send(respuesta)
+      //break
     }
     i++
+    if(i==vms.length){
+      res.send(respuesta)
+    }
   }
-
-  res.send(respuesta)
+  //connection.end()
+  
 });
 
 //Obtengo la información de la base de datos
 app.get('/get_bd', (req, res) => {
-  
+  const connection = mysql.createConnection({ 
+    host: 'base', // host for connection 
+    //port: 3306, // default port for mysql is 3306 
+    user: 'root', // username of the mysql connection 
+    password: 'secret', // password of the mysql connection
+    database: 'proyecto1', // database from which we want to connect out node application 
+    
+   
+    });
+  //Hago la conexion a la base de datos
+  connection.connect(function (err) {
+    if(err){
+        console.log("error occurred while connecting: "+err.message);
+        
+    }
+    else{
+        console.log("connection created with Mysql successfully");
+      
+    }
+  });
   var body = req.body
   
  
@@ -177,12 +248,17 @@ app.get('/get_bd', (req, res) => {
           console.error('Error al ejecutar la consulta: ' + err.message);
         } else{
          // console.log(results)
-          
+          connection.end()
           res.send(results)
         }
         
       });
  
+});
+
+process.on('uncaughtException', (err) => {
+  console.error('Error no controlado:', err);
+  
 });
 
 

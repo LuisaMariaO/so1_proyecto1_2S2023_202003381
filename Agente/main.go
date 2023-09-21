@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+
 	"net/http"
 	"os/exec"
 	"time"
@@ -51,7 +52,6 @@ func main() {
 	// Configura el cliente que hace solicitudes cada 10 segundos
 	go func() {
 		for {
-
 			cmd := exec.Command("sh", "-c", "cat /proc/ram_202003381 /proc/cpu_202003381")
 			out, err := cmd.CombinedOutput()
 			if err != nil {
@@ -68,10 +68,9 @@ func main() {
 				return
 			}
 			//json.NewDecoder((request.Body)).Decode(&dat)
-			payloadBuf := new(bytes.Buffer)
-			json.NewEncoder(payloadBuf).Encode(body)
+
 			// Realiza una solicitud HTTP como cliente a la API en NodeJS, puerto 8080
-			resp, err := http.Post("http://localhost:8080/post_info", "application/json", bytes.NewBuffer(jsonData))
+			resp, err := http.Post("http://backend:8080/post_info", "application/json", bytes.NewBuffer(jsonData))
 			if err != nil {
 				fmt.Println("Error al realizar la solicitud HTTP:", err)
 			} else {

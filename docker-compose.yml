@@ -1,4 +1,4 @@
-version: '1'
+version: '2'
 services:
   base:
     image: "mysql"
@@ -9,6 +9,28 @@ services:
       - base_mysql:/var/lib/mysql      
     ports:
       - "3306:3306"
+  backend:
+    image: "backend"
+    container_name: 'Backend_Node'
+    ports:
+      - "8080:8080"
+    environment:
+      - MYSQL_HOST='base'
+      - MYSQL_USER='root'
+      - MYSQL_PASSWORD='secret'
+      - MYSQL_DATABASE='proyecto1'
+    restart: always
+    #depends_on:
+    #  - base
+
+  agente:
+    image: "agente"
+    container_name: 'Agente_Golang'
+    privileged: true
+    pid: host
+    ports:
+      - "5000:5000"
+
 
 volumes:
   base_mysql: 
