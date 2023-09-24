@@ -58,6 +58,20 @@ app.get('/', (req, res) => {
  
 });
 
+//Obtengo las máquinas dispnibles para monitoreo
+app.get('/get_maquinas', (req, res) => {
+  let maquinas = {"maquinas":[]}
+  let i = 0
+  console.log(vms)
+  while(i<vms.length){
+    maquinas.maquinas.push(vms[i].ip)
+    i++
+    if(i==vms.length){
+      res.send(maquinas)
+    }
+  }
+  res.send(maquinas)
+});
 //Recibiendo ifo del agente golang
 app.post('/post_info', (req, res) => {
   const connection = mysql.createConnection({ 
@@ -96,12 +110,14 @@ app.post('/post_info', (req, res) => {
     } else {
       if(results.length==0){
         //Guardo en el json de monitoreo
+        crear=false
         vms.push({
           "ip":clientIP,
           "ram":body.RAM.Porcentaje_en_uso,
           "cpu":body.CPU.cpu_porcentaje,
           "procesos":body.CPU.processes
         })
+        console.log("Se inseretó en lista y en bd")
         sql = 'INSERT INTO vm (ip) VALUES (\''+clientIP+'\');'
         connection.query(sql, (err, results) => {
           if (err) {
@@ -110,13 +126,15 @@ app.post('/post_info', (req, res) => {
         });
       }else{
         
-        let i;
+        let i=0;
         while(i<vms.length){
+
           if (vms[i].ip === clientIP){
             crear=false
             vms[i].ram = body.RAM.Porcentaje_en_uso
-            vms[i].cpu = body.CPU.cpu_porcentaje,
+            vms[i].cpu = body.CPU.cpu_porcentaje
             vms[i].procesos = body.CPU.processes
+            console.log("Se actualizó")
             break
           }
           i++
@@ -128,6 +146,7 @@ app.post('/post_info', (req, res) => {
             "cpu":body.CPU.cpu_porcentaje,
             "procesos":body.CPU.processes
           })
+          console.log("Solo se insertó")
         }
       }
       
@@ -196,10 +215,10 @@ app.post('/monitoreo', (req, res) => {
     }
   });
   let ip = req.body.ip
-  console.log(ip)
+  
   let respuesta = {}
   let i = 0
-  console.log(vms.length)
+
   while(i<vms.length){
     if (vms[i].ip === ip){
       respuesta = vms[i]
@@ -216,7 +235,7 @@ app.post('/monitoreo', (req, res) => {
 });
 
 //Obtengo la información de la base de datos
-app.get('/get_bd', (req, res) => {
+app.post('/get_bd', (req, res) => {
   const connection = mysql.createConnection({ 
     host: 'base', // host for connection 
     //port: 3306, // default port for mysql is 3306 
@@ -237,10 +256,9 @@ app.get('/get_bd', (req, res) => {
       
     }
   });
-  var body = req.body
-  
+  console.log(req.body)
  
-  let sql = 'SELECT * FROM lectura WHERE vm_ip=\''+body.ip+'\';'
+  let sql = 'SELECT * FROM lectura WHERE vm_ip=\''+req.body.ip+'\';'
   console.log(sql)
       connection.query(sql, (err, results) => {
         if (err) {

@@ -29,8 +29,12 @@ services:
     privileged: true
     pid: host
     ports:
-      - "5000:5000"
+      - "5002:5002"
 
-
+  frontend:
+    image: "frontend"
+    container_name: 'Frontend-React'
+    ports:
+      - "3000:3000"
 volumes:
   base_mysql: 

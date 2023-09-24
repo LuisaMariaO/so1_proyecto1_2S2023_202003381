@@ -6,7 +6,7 @@ COPY go.mod .
 COPY main.go .
 
 RUN go build -o bin . 
-EXPOSE 5000
+EXPOSE 5002
 ENTRYPOINT [ "/app/bin" ]
 #sudo docker build . -t agente
-#sudo docker run --privileged --pid=host -p 5000:5000 agente 
+#sudo docker run --privileged --pid=host -p 5002:5002 agente 

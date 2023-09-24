@@ -26,12 +26,22 @@ type Msg struct {
 func main() {
 	//Servidor web
 	http.HandleFunc("/kill", func(w http.ResponseWriter, r *http.Request) {
+		// Configura los encabezados CORS
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+
+		if r.Method == http.MethodOptions {
+			// Respuesta prefligth para las solicitudes OPTIONS
+			return
+		}
+
 		fmt.Println(("?"))
 		w.Header().Add("content-type", "application/json")
 		var kill Kill
 		json.NewDecoder((r.Body)).Decode(&kill)
 
-		cmd := exec.Command("sh", "-c", "kill -9 ", kill.PID)
+		cmd := exec.Command("sh", "-c", "kill -9 "+kill.PID)
 		out, err := cmd.CombinedOutput()
 		if err != nil {
 			fmt.Println(err)
@@ -43,10 +53,9 @@ func main() {
 
 	})
 
-	// Inicia el servidor web en el puerto 5000 en una goroutine
 	go func() {
-		fmt.Println("Servidor web iniciado en http://localhost:5000")
-		http.ListenAndServe(":5000", nil)
+		fmt.Println("Servidor web iniciado en http://localhost:5002")
+		http.ListenAndServe(":5002", nil)
 	}()
 
 	// Configura el cliente que hace solicitudes cada 10 segundos
