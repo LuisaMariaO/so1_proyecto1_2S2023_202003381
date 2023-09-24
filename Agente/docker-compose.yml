@@ -1,0 +1,11 @@
+version: '3'
+services:
+  agente:
+      image: luisamariao/agente:v1
+      container_name: 'Agente_Golang'
+      environment:
+        - BASE_URL= "http://localhost:8080"
+      privileged: true
+      pid: host
+      ports:
+        - "5002:5002"

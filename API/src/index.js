@@ -62,7 +62,7 @@ app.get('/', (req, res) => {
 app.get('/get_maquinas', (req, res) => {
   let maquinas = {"maquinas":[]}
   let i = 0
-  console.log(vms)
+ 
   while(i<vms.length){
     maquinas.maquinas.push(vms[i].ip)
     i++

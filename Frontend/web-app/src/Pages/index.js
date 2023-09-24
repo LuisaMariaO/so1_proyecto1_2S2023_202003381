@@ -134,7 +134,7 @@ const dataCpu = {
 
 const optionsCpu = {
   responsive:true,
-  mantainAspectRatio:false,
+  
   plugins: {
     legend: {
       position: 'top',

@@ -1,7 +1,7 @@
-version: '2'
+version: '3'
 services:
   base:
-    image: "mysql"
+    image: mysql
     container_name: 'Base_Mysql'
     environment:
       MYSQL_ROOT_PASSWORD: secret
@@ -10,7 +10,7 @@ services:
     ports:
       - "3306:3306"
   backend:
-    image: "backend"
+    image: luisamariao/backend:v1
     container_name: 'Backend_Node'
     ports:
       - "8080:8080"
@@ -23,16 +23,8 @@ services:
     #depends_on:
     #  - base
 
-  agente:
-    image: "agente"
-    container_name: 'Agente_Golang'
-    privileged: true
-    pid: host
-    ports:
-      - "5002:5002"
-
   frontend:
-    image: "frontend"
+    image: luisamariao/frontend:v1
     container_name: 'Frontend-React'
     ports:
       - "3000:3000"

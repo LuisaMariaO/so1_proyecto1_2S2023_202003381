@@ -4,6 +4,8 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
+	"os"
+	"strings"
 
 	"net/http"
 	"os/exec"
@@ -77,9 +79,12 @@ func main() {
 				return
 			}
 			//json.NewDecoder((request.Body)).Decode(&dat)
-
+			base := os.Getenv("BASE_URL")
+			base = strings.Replace(base, "\"", "", -1)
+			url := fmt.Sprintf("%s/%s", base, "post_info")
 			// Realiza una solicitud HTTP como cliente a la API en NodeJS, puerto 8080
-			resp, err := http.Post("http://backend:8080/post_info", "application/json", bytes.NewBuffer(jsonData))
+			url = strings.Replace(url, " ", "", -1)
+			resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonData))
 			if err != nil {
 				fmt.Println("Error al realizar la solicitud HTTP:", err)
 			} else {
