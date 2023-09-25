@@ -1,8 +1,11 @@
 import axios from 'axios'
 
+
+
+
 const instance = axios.create(
     {
-        baseURL: 'http://localhost:8080', //TODO:Cambiar la ip
+        baseURL:'http://34.105.25.226:8080/', //TODO:Cambiar la ip
         timeout: 100000,
         headers:{
             'Content-Type':'application/json'
