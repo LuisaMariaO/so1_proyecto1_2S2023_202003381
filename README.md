@@ -10,19 +10,27 @@ Para construirlos es necesario tener instalado GCC y Make.
  
 Para generar binarios compilados:
  
-```make all```  
+```
+make all
+```  
 
 Borrar binarios compilados:
  
-```make clean```
+```
+make clean
+```
  
 Insertar módulo:
 
-```sudo insmod <nombre_modulo>.ko``` 
+```
+sudo insmod <nombre_modulo>.ko
+``` 
 
 Borrar módulo:
  
-```sudo rmmod <nombre_modulo>```
+```
+sudo rmmod <nombre_modulo>
+```
  
 >Los módulos se insertan en /proc y desde ahí se pueden consultar.
 
@@ -53,12 +61,16 @@ Para que la base de datos funcione correctamente, es necesario instalar antes My
  
 Instalar MySQL server:
  
-```sudo apt install mysql-server```
+```
+sudo apt install mysql-server
+```
 
  
 Conectando con la base de datos, la cual ya debe estar corriendo en un contenedor:
  
-```mysql - 127.0.0.1 -P <puerto_asignado> -u <usuario_bd> -p```
+```
+mysql - 127.0.0.1 -P <puerto_asignado> -u <usuario_bd> -p
+```
  
 Luego insertar la contraseña designada para ese usuario.
  
